@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Open+Sans" rel="stylesheet">
 </head>
 
 <body>
@@ -20,29 +21,32 @@
     <div class="container">
 
         <div class="jumbotron">
-            <h1>
-                <i class="fa fa-facebook-square" aria-hidden="true"></i> Friends Finder</h1>
-            <hr>
-            <h2>Is your job a joke? Are you broke? Love Life D.O.A.?</h2>
-            <h2>We are here for you!</h2>
-            <h2>Take the survey to find the friend that matches you!</h2>
-            <br>
+            <div class=" image-bg col-lg-12">
 
-            <div>
-                <a href="/survey">
-                    <button type="button" class="btn btn-lg btn-primary">
-                        <h4>
-                            <span class="glyphicon glyphicon-list-alt"></span> Let's go</h4>
-                    </button>
-                </a>
             </div>
-
         </div>
-
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Is your job a joke? Are you broke? Love Life D.O.A.? Don't worry...We are here for you!</h2>
+                <h2>Take the survey to find the friend that matches you!</h2>
+                <br>
+        
+                <div>
+                    <a href="/survey">
+                        <button type="button" class="btn btn-lg btn-info">
+                            <h4>
+                                <span class="glyphicon glyphicon-thumbs-up"></span> Let's go</h4>
+                        </button>
+                    </a>
+                </div>
+        
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-12">
 
                 <!-- Current Friends -->
+                <br>
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">Friends</h4>
@@ -95,11 +99,19 @@
                     tableSection.attr('id', 'tableWell-' + i + 1);
                     $('#tableSection').append(tableSection);
 
-                    var friend = i + 1;
+                    var generic = "default.png";
 
-                    $('#tableWell-' + i + 1).append('<h2>' + data[i].name  +
-                        '</h2>' + '<p><img class="img-thumbnail" style="width:250px;height:300px;"  src= ' +
-                        data[i].photo + ">");
+                    if (data[i].photo === "n/a") {
+                        $('#tableWell-' + i + 1).append('<h2>' + data[i].name +
+                            '</h2>' + '<p><img class="img-thumbnail" style="width:250px;height:300px;"  src= ' +
+                            generic + ">");
+
+                    } else {
+                        $('#tableWell-' + i + 1).append('<h2>' + data[i].name +
+                            '</h2>' + '<p><img class="img-thumbnail" style="width:250px;height:300px;"  src= ' +
+                            data[i].photo + ">");
+
+                    }
                 }
             });
     }
