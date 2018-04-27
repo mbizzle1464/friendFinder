@@ -17,7 +17,7 @@ This application is a compatibility-based "FriendFinder" that will compare your 
 #### Author:
 ***
 
-Michael Bizzle [GitHub](https://github.com/mbizzle1464)
+Michael Bizzle - [GitHub](https://github.com/mbizzle1464)
 
 #### Technologies Used:
 ***
