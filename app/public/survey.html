@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>FriendFinder</title>
+    <title>Friends Finder</title>
 
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="jumbotron">
             <h1>
-                <i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+                <i class="fa fa-facebook-square" aria-hidden="true"></i> Friends Finder</h1>
             <hr>
             <h2>Survey Questions </h2>
             <h2>Answer the questions below to find a friend!</h2>
@@ -209,12 +209,12 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h2 class="modal-title">
-                        <strong>Best Match</strong>
+                        <strong>This Friend is Here For You</strong>
                     </h2>
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
-                    <img id="match-img" src="" alt="">
+                    <img class="img-thumbnail" style="width:250px;height:300px;" id="match-img" src="" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -226,7 +226,7 @@
 
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
+    <script type="text/javascript">
     $("#submit").on("click", function (event) {
             event.preventDefault();
 
@@ -269,6 +269,7 @@
                 console.log(newFriend);
 
                 $.post("/api/friends", newFriend, function (data) {
+                    console.log(data);  
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
 
