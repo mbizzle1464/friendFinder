@@ -1,6 +1,6 @@
 ![](app/public/logo.png)
 # Finder
-***
+
 
 ### Overview
 ***
