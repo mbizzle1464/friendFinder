@@ -43,4 +43,9 @@ module.exports = function (app) {
         res.json(bestMatchPerson);
         friendsData.push(req.body);
     });
-}
+
+    app.post("/", function(req, res){
+        console.log(friendsData);   
+
+    });
+}; 

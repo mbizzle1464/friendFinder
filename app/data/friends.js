@@ -7,45 +7,40 @@
 
 var friendsArray = [
     {
-        name: "Lara Croft",
+        name: "Ross Geller",
         photo:
-            "https://www.dropbox.com/s/gyn6wi7ppmcg99f/Tomb%20Riader.jpg?dl=0",
+            "https://vignette.wikia.nocookie.net/friends/images/8/89/Square_Ross.jpg/revision/20111216200027",
         scores: ["5", "1", "4", "4", "5", "1", "2", "5", "4", "1"]
     },
     {
-        name: "Peter Rabbit",
+        name: "Rachel Green",
         photo:
-            "https://www.dropbox.com/s/rzqgfgvozuohapl/peter%20rabbit.jpg?dl=0",
+            "https://www.aquarelle.md/uploads/news/66535/95743_import_image.png",
         scores: ["4", "2", "5", "1", "3", "2", "2", "1", "3", "2"]
     },
     {
-        name: "Han Solo",
-        photo: "https://www.dropbox.com/s/e6qmc90exva596z/Solo%20A%20Star%20Wars%20Story.jpg?dl=0",
+        name: "Phoebe Buffay",
+        photo: "https://upload.wikimedia.org/wikipedia/lv/f/f6/Friendsphoebe.jpg",
         scores: ["5", "2", "2", "2", "4", "1", "3", "2", "5", "5"]
     },
     {
-        name: "Melissa McCarthy",
+        name: "Chandler Bing",
         photo:
-            "https://www.dropbox.com/s/y83li6zqiy6zniy/Life%20of%20the%20Party.jpg?dl=0",
+            "https://pbs.twimg.com/profile_images/917789882776522752/7nZeyOPc_400x400.jpg",
         scores: ["3", "3", "4", "2", "2", "1", "3", "2", "2", "3"]
     },
     {
-        name: "Amy Schumer",
+        name: "Joey Tribbiani",
         photo:
-            "https://www.dropbox.com/s/n61hfvepngfm0ny/I%20Feel%20Pretty.jpg?dl=0",
+            "http://f-r-i-e-n-d-s.allmyblog.com/images/f-r-i-e-n-d-s/1_20080114_191638.jpg",
         scores: ["4", "3", "4", "1", "5", "2", "5", "3", "1", "4"]
     },
     {
-        name: "Deadpool",
+        name: "Monica Geller",
         photo:
-            "https://www.dropbox.com/s/rihdwbs2pl85rm5/Deadpool%202.jpg?dl=0",
+            "http://images.fanpop.com/images/image_uploads/Monica-monica-geller-86967_278_358.jpg",
         scores: ["4", "4", "2", "3", "2", "2", "3", "2", "4", "5"]
     },
-    {
-        name: "Black Panther",
-        photo: "https://www.dropbox.com/s/ob4hfgo6ggrprn4/black%20panther.jpg?dl=0",
-        scores: ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3"]
-    }
 ];
 
 // Note how we export the array. This makes it accessible to other files using require.
