@@ -1,7 +1,9 @@
-# F * r * i * e * n * d * s    F * i * n * d * e * r
+# F * r * i * e * n * d * s    
+# F * i * n * d * e * r
 
 ### Overview
 ***
+![](app/public/logo.png)
 
 "I'll be there for you.... 'cause you're there for me tooooooooooo!" 
 
