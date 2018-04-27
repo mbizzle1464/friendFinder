@@ -17,6 +17,7 @@ var app = express();
 
 // Sets an initial port. We"ll use this later in our listener
 var PORT = process.env.PORT || 3000;
+//This allows for the app to use a static path to the app/public folder giving me the ability to reference a style sheet, google fonts, etc.
 app.use(express.static(path.join(__dirname, './app/public')));
 
 // Sets up the Express app to handle data parsing
