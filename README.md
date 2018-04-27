@@ -1,6 +1,5 @@
 ![](app/public/logo.png)
-# 
-FINDER
+#Finder
 ***
 
 ### Overview
