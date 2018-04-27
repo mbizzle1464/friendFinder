@@ -30,6 +30,13 @@
                 <h2>Is your job a joke? Are you broke? Love Life D.O.A.? Don't worry...We are here for you!</h2>
                 <h2>Take the survey to find the friend that matches you!</h2>
                 <br>
+
+                <div class="text-center push-to-bottom">
+                    <button class="btn btn-warning btn-xs theme-button">
+                        <span class="glyphicon glyphicon-music"></span> Play Song</button>
+                    <button class="btn btn-default btn-xs pause-button">
+                        <span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+                </div>
         
                 <div>
                     <a href="/survey">
@@ -73,6 +80,20 @@
 </body>
 
 <script type="text/javascript">
+
+        // Play and Pause Song
+        var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "song.mp3");
+
+            // Play Song
+                $(".theme-button").on("click", function () {
+                    audioElement.play();
+                });
+                // Pause Song
+                $(".pause-button").on("click", function () {
+                    audioElement.pause();
+                });
+
     function friendsTable() {
 
         // Here we get the location of the root page.
@@ -101,7 +122,7 @@
 
                     var generic = "default.png";
 
-                    if (data[i].photo === "n/a") {
+                    if (data[i].photo === "n/a" || data[i].photo === "") {
                         $('#tableWell-' + i + 1).append('<h2>' + data[i].name +
                             '</h2>' + '<p><img class="img-thumbnail" style="width:250px;height:300px;"  src= ' +
                             generic + ">");
