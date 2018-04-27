@@ -1,5 +1,6 @@
 ![](app/public/logo.png)
-# F * i * n * d * e * r
+# FINDER
+***
 
 ### Overview
 ***
