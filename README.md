@@ -12,7 +12,7 @@ This application is a compatibility-based "FriendFinder" that will compare your 
 ### Let's go! 
 ***
 
-* Want to know which Friend character you relate with the most... Find out [here](https://be-there-for-you.herokuapp.com/). 
+* Want to know which Friends character you relate with the most... Find out [here](https://be-there-for-you.herokuapp.com/). 
 
 #### Author:
 ***
